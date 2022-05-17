@@ -5,7 +5,9 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "lint": "eslint index.ts"
+    "lint": "eslint index.ts",
+    "patch": "git apply --no-add fix.patch",
+    "revert": "rm -rf node_modules && yarn install"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "5.24.0",
