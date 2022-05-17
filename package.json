@@ -6,6 +6,7 @@
   "private": true,
   "scripts": {
     "lint": "eslint index.ts",
+    "test": "eslint --print-config .eslintrc.js",
     "patch": "git apply --no-add fix.patch",
     "revert": "rm -rf node_modules && yarn install"
   },
